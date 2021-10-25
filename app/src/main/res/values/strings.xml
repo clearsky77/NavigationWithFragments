@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">NavigationWithFragments</string>
     <string name="main_title">오늘의 행운냥?</string>
+    <string name="talk01_text">오늘의 행운을\n알고싶냥?</string>
+    <string name="talk02_text">마음의 준비가\n되었으면\n결과보기를\n클릭하라냥.</string>
 </resources>

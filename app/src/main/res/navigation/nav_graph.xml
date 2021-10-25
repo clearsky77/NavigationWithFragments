@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
 
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.clearsky77.navigationwithfragments.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_talk01Fragment"
+            app:destination="@id/talk01Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_talk01Fragment2"
+            app:destination="@id/talk01Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/talk01Fragment"
+        android:name="com.clearsky77.navigationwithfragments.fragments.Talk01Fragment"
+        android:label="fragment_talk01"
+        tools:layout="@layout/fragment_talk01" >
+        <action
+            android:id="@+id/action_talk01Fragment_to_talk02Fragment"
+            app:destination="@id/talk02Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/talk02Fragment"
+        android:name="com.clearsky77.navigationwithfragments.fragments.Talk02Fragment"
+        android:label="fragment_talk02"
+        tools:layout="@layout/fragment_talk02" >
+        <action
+            android:id="@+id/action_talk02Fragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.clearsky77.navigationwithfragments.fragments.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
 </navigation>
